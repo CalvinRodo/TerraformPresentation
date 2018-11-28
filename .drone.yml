@@ -2,9 +2,6 @@
 kind: pipeline
 name: default
 
-clone:
-  depth: 1
-
 platform:
   os: linux
   arch: amd64
