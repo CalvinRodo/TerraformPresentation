@@ -8,9 +8,9 @@ platform:
 
 steps:
 - name: display repo
-  image: node
+  image: alpine
   commands:
-    - apt install tree -y
+    - apk add tree
     - tree .
 
 - name: build
