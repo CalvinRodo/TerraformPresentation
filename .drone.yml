@@ -7,13 +7,7 @@ platform:
   arch: amd64
 
 steps:
-- name: display repo
-  image: alpine
-  commands:
-    - apk add tree
-    - tree .
-
-- name: build
+- name: build and push to quay.io
   image: plugins/docker
   settings:
     password:
