@@ -10,6 +10,7 @@ steps:
 - name: display repo
   image: node
   commands:
+    - apt install tree -y
     - tree .
 
 - name: build
