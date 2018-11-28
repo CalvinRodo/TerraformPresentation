@@ -1,0 +1,22 @@
+---
+kind: pipeline
+name: default
+
+clone:
+  depth: 1
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: build
+  image: plugins/docker
+  settings:
+    password:
+      from_secret: QUAY_PWORD
+    registry: quay.io
+    repo: quay.io/calvinrodo/terraformpresentation
+    tags:
+      - latest
+    username: calvinrodo+presentations
