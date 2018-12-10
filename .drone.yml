@@ -27,7 +27,7 @@ steps:
     username: "cloud.drone.io"
     template: >
       {{#success build.status}}
-        Terraform presentation build {{build.number}} succeeded. Good job. <@cal>
+        Terraform presentation build {{build.number}} succeeded. Good job. <@Cal>
       {{else}}
-        Terraform presentation build {{build.number}} failed. You sucks <@cal> 
+        Terraform presentation build {{build.number}} failed. You suck <@Cal> 
       {{/success}}
