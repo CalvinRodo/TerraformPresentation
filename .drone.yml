@@ -24,6 +24,7 @@ steps:
       from_secret: SLACK_WEBHOOK
     channel: ci
     link_names: true
+    username: "cloud.drone.io"
     template: >
       {{#success build.status}}
         Terraform presentation build {{build.number}} succeeded. Good job. <@cal>
